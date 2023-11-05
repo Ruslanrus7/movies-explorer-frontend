@@ -1,0 +1,251 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  padding: 0 70px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.header__profile {
+  display: flex;
+  gap: 30px;
+  font-size: 12px;
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+.header__profile-register {
+  text-decoration: none;
+  align-self: center;
+  color: #fff;
+}
+
+.header__frofile-entry {
+  text-decoration: none;
+  color: #000;
+  background-color: #3DDC84;
+  padding: 8px 20px;
+  border-radius: 3px;
+}
+
+.header__nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 18px 0;
+}
+
+.header__logo {
+  background-image: url(../../images/logo.svg);
+  background-repeat: no-repeat;
+  width: 43px;
+  height: 38px;
+  display: block;
+  transition: opacity 0.6 linear;
+  margin: 18px 44px 18px 0;
+}
+
+.header__logo:hover {
+  opacity: 0.8;
+}
+
+.header__nav-movies {
+  display: flex;
+  list-style-type: none;
+  gap: 16px;
+  padding: 0;
+  align-self: center;
+  margin: 0;
+}
+
+.header__nav-link {
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #fff;
+  font-weight: 400;
+  transition: opacity 0.6 linear;
+}
+
+.header__nav-link_active {
+  font-weight: 500;
+}
+
+.header__nav-link:hover {
+  opacity: 0.7;
+}
+
+.header__profile-account {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-image: url(../../images/profile.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #313131;
+  position: relative;
+  transition: opacity 0.6 linear;
+}
+
+.header__profile-account_color {
+  background-color: #0F4157;
+}
+
+.header__profile-account:hover {
+  opacity: 0.7;
+}
+
+.header__profile-account-text {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 0.9;
+  color: #fff;
+  position: absolute;
+  bottom: -5px;
+  right: 37px;
+}
+
+.header__burger {
+  display: none;
+}
+
+.header__nav-link-display {
+  display: none;
+}
+
+.header__menu-open .header__nav {
+  display: flex;
+}
+
+.header__menu-open .header__nav-link-display {
+  display: block;
+}
+
+.header__menu-open .header__burger {
+  background-image: url(../../images/burger-close.svg);
+  background-position: center;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  top: 22px;
+  right: 22px;
+}
+
+@media (max-width: 1100px) {
+
+  .header {
+    padding: 0 30px;
+  }
+
+  .header__nav {
+    max-width: 520px;
+    height: 100vh;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    margin: 0;
+    justify-content: space-between;
+    display: none;
+    z-index: 9;
+    right: 0;
+    top: 0;
+    background-color: #202020;
+    transition: opacity 0.6 linear;
+  }
+
+  .header__nav:hover {
+    opacity: 0.8;
+  }
+
+  .header__nav-movies {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 159px;
+    gap: 25px;
+  }
+
+
+  .header__burger {
+    display: block;
+    background-image: url(../../images/burger.png);
+    background-position: center;
+    background-color: inherit;
+    width: 44px;
+    height: 44px;
+    background-size: 44px 44px;
+    border: none;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    right: 30px;
+    top: 15px;
+    outline: none;
+    z-index: 10;
+  }
+
+  .header__nav-link {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .header__nav-link_active {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 4px;
+  }
+
+  .header__profile-account {
+    margin-bottom:  90px;
+    position: relative;
+    left: 35px;
+  }
+
+}
+
+@media (min-width: 1101px) {
+  .header__nav-link-display {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .header {
+    padding: 0 14px;
+  }
+
+  .header__profile {
+    font-size: 10px;
+    gap: 14px;
+  }
+
+  .header__frofile-entry {
+    padding: 7px 12px;
+  }
+
+  .header__nav-movies {
+    gap: 21px;
+  }
+
+  .header__menu-open .header__burger {
+    top: 28px;
+    right: 13px;
+  }
+
+  .header__burger {
+    width: 23px;
+    height: 23px;
+    top: 24px;
+    right: 21px;
+  }
+
+  .header__nav-link_active {
+    padding-bottom: 7px;
+  }
+
+  .header__profile-account {
+    margin-bottom: 130px;
+  }
+}
+

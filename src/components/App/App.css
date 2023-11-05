@@ -1,0 +1,59 @@
+.page{
+  font-family: 'Inter', Arial, sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: #23333a;
+}
+
+.page__header {
+  margin: 0 auto;
+}
+
+.page__promo {
+  margin: 0 auto;
+}
+
+.page__nav-tab {
+  margin: 0 auto;
+}
+
+.page___about-project {
+  margin: 0 auto;
+}
+
+.page__techs {
+  margin: 0 auto;
+}
+
+.page__about-me {
+  margin: 0 auto;
+}
+
+.page__portfolio {
+  margin: 0 auto;
+}
+
+.page__footer {
+  margin: 0 auto;
+}
+
+.page__main-movies {
+  margin: 0 auto;
+}
+
+.page__main-saved-movies {
+  margin: 0 auto;
+}
+
+.page__profile {
+  margin: 0 auto;
+}
+
+.page__auth {
+  margin: 0 auto;
+}
+
+.page__not-found {
+  margin: 0 auto;
+}
+
