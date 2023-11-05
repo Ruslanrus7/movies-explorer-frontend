@@ -14,7 +14,7 @@ export default function Header(props) {
 
   return (
 
-    <header className={`header page__header ${isMenuOpen ? "header__menu-open": ' '}`}>
+    <header className={`header page__header ${isMenuOpen ? "header_menu_open": ' '}`}>
       <Link to="/" className="header__logo"/>
       {props.loggedIn && <button className='header__burger' onClick={toggleMenu}/>}
       {props.loggedIn && <Navigation />}

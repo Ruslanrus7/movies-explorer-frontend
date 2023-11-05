@@ -36,6 +36,15 @@
   margin-top: 0;
 }
 
+.portfolio__text-link {
+  text-decoration: none;
+  transition: opacity 0.6 linear;
+}
+
+.portfolio__text-link:hover {
+  opacity: 0.8;
+}
+
 .portfolio__text {
   margin: 0;
   font-size: 30px;

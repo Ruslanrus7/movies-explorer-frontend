@@ -18,11 +18,11 @@ export default function AboutProject () {
       </div>
       <div className='about-deadlines'>
         <div className='about-deadlines__back'>
-          <div className='about-deadlines__back-chart'>1 неделя</div>
+          <p className='about-deadlines__back-chart'>1 неделя</p>
           <p className='about-deadlines__text'>Back-end</p>
         </div>
         <div className='about-deadlines__front'>
-          <div className='about-deadlines__front-chart'>4 недели</div>
+          <p className='about-deadlines__front-chart'>4 недели</p>
           <p className='about-deadlines__text'>Front-end</p>
         </div>
       </div>

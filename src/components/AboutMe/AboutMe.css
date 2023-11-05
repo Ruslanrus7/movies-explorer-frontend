@@ -23,6 +23,7 @@
   line-height: 1.16;
   color: #fff;
   margin: 0;
+  font-weight: 400;
 }
 
 .about-me__job {
@@ -46,6 +47,11 @@
   color: #fff;
   font-size: 14px;
   text-decoration: none;
+  transition: opacity 0.6 linear;
+}
+
+.about-me__link:hover {
+  opacity: 0.8;
 }
 
 .about-me__photo {

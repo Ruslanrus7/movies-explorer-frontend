@@ -20,14 +20,24 @@
   text-decoration: none;
   align-self: center;
   color: #fff;
+  transition: opacity 0.6 linear;
 }
 
-.header__frofile-entry {
+.header__profile-register:hover {
+  opacity: 0.8;
+}
+
+.header__profile-entry {
   text-decoration: none;
   color: #000;
   background-color: #3DDC84;
   padding: 8px 20px;
   border-radius: 3px;
+  transition: opacity 0.6 linear;
+}
+
+.header__profile-entry:hover {
+  opacity: 0.8;
 }
 
 .header__nav {
@@ -77,7 +87,7 @@
   opacity: 0.7;
 }
 
-.header__profile-account {
+.header__nav-account {
   width: 26px;
   height: 26px;
   border-radius: 50%;
@@ -89,15 +99,15 @@
   transition: opacity 0.6 linear;
 }
 
-.header__profile-account_color {
+.header__nav-account_color {
   background-color: #0F4157;
 }
 
-.header__profile-account:hover {
+.header__nav-account:hover {
   opacity: 0.7;
 }
 
-.header__profile-account-text {
+.header__nav-account-text {
   font-size: 13px;
   font-weight: 500;
   line-height: 0.9;
@@ -115,15 +125,15 @@
   display: none;
 }
 
-.header__menu-open .header__nav {
+.header_menu_open .header__nav {
   display: flex;
 }
 
-.header__menu-open .header__nav-link-display {
+.header_menu_open .header__nav-link-display {
   display: block;
 }
 
-.header__menu-open .header__burger {
+.header_menu_open .header__burger {
   background-image: url(../../images/burger-close.svg);
   background-position: center;
   background-size: cover;
@@ -152,11 +162,6 @@
     right: 0;
     top: 0;
     background-color: #202020;
-    transition: opacity 0.6 linear;
-  }
-
-  .header__nav:hover {
-    opacity: 0.8;
   }
 
   .header__nav-movies {
@@ -184,6 +189,11 @@
     top: 15px;
     outline: none;
     z-index: 10;
+    transition: opacity 0.6 linear;
+  }
+
+  .header__burger:hover {
+    opacity: 0.8;
   }
 
   .header__nav-link {
@@ -196,7 +206,7 @@
     padding-bottom: 4px;
   }
 
-  .header__profile-account {
+  .header__nav-account {
     margin-bottom:  90px;
     position: relative;
     left: 35px;
@@ -219,8 +229,11 @@
     font-size: 10px;
     gap: 14px;
   }
+  .header__nav-movies {
+    margin-top: 144px;
+  }
 
-  .header__frofile-entry {
+  .header__profile-entry {
     padding: 7px 12px;
   }
 
@@ -228,15 +241,15 @@
     gap: 21px;
   }
 
-  .header__menu-open .header__burger {
-    top: 28px;
-    right: 13px;
+  .header_menu_open .header__burger {
+    top: 16px;
+    right: 14px;
   }
 
   .header__burger {
     width: 23px;
     height: 23px;
-    top: 24px;
+    top: 27px;
     right: 21px;
   }
 
@@ -244,8 +257,8 @@
     padding-bottom: 7px;
   }
 
-  .header__profile-account {
-    margin-bottom: 130px;
+  .header__nav-account {
+    margin-bottom: 145px;
   }
 }
 

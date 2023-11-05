@@ -19,7 +19,7 @@ export default function Navigation (props) {
           <NavLink to="/saved-movies" className={({isActive}) => `header__nav-link ${isActive ? "header__nav-link_active" : ""}`}>Сохранённые фильмы</NavLink>
         </li>
       </ul>
-      <Link to='/profile' className={location === '/' ? 'header__profile-account header__profile-account_color' : 'header__profile-account'}><p className='header__profile-account-text'>Аккаунт</p></Link>
+      <Link to='/profile' className={location === '/' ? 'header__nav-account header__nav-account_color' : 'header__nav-account'}><p className='header__nav-account-text'>Аккаунт</p></Link>
     </nav>
   )
 }

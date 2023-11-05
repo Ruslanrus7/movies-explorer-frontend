@@ -8,7 +8,7 @@ export default function MoviesCardList () {
 
   return (
     <section className='movies'>
-      <div className='movies__container'>
+      <ul className='movies__container'>
         <MoviesCard />
         <MoviesCard />
         <MoviesCard />
@@ -18,7 +18,7 @@ export default function MoviesCardList () {
         <MoviesCard />
         <MoviesCard />
         <MoviesCard />
-      </div>
+      </ul>
       {location === '/movies' && <button className='movies__button' type="button">Еще</button>}
     </section>
   )
