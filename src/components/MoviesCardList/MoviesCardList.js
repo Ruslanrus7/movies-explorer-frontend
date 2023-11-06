@@ -9,15 +9,15 @@ export default function MoviesCardList () {
   return (
     <section className='movies'>
       <ul className='movies__container'>
-        <MoviesCard />
-        <MoviesCard />
-        <MoviesCard />
-        <MoviesCard />
-        <MoviesCard />
-        <MoviesCard />
-        <MoviesCard />
-        <MoviesCard />
-        <MoviesCard />
+        <MoviesCard name={'постер фильма'}/>
+        <MoviesCard name={'постер фильма'}/>
+        <MoviesCard name={'постер фильма'}/>
+        <MoviesCard name={'постер фильма'}/>
+        <MoviesCard name={'постер фильма'}/>
+        <MoviesCard name={'постер фильма'}/>
+        <MoviesCard name={'постер фильма'}/>
+        <MoviesCard name={'постер фильма'}/>
+        <MoviesCard name={'постер фильма'}/>
       </ul>
       {location === '/movies' && <button className='movies__button' type="button">Еще</button>}
     </section>

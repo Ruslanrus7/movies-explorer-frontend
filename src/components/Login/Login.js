@@ -8,13 +8,13 @@ export default function Login () {
     <main>
       <AuthForm title='Рады видеть!' name='login'>
         <label className='auth__label'>
-          <p className='auth__input-text'>E-mail</p>
-          <input className='auth__input' type='email' placeholder='Email'/>
+          <span className='auth__input-text'>E-mail</span>
+          <input className='auth__input' type='email' placeholder='Email' required/>
           <span className="auth__input-error input-emailuser-error"></span>
         </label>
         <label className='auth__label'>
-          <p className='auth__input-text'>Пароль</p>
-          <input className='auth__input' type='password' placeholder='Password' minLength={2} maxLength={30}/>
+          <span className='auth__input-text'>Пароль</span>
+          <input className='auth__input' type='password' placeholder='Password' minLength={2} maxLength={30} required/>
           <span className="auth__input-error input-password-error"></span>
           </label>
           <button className='auth__form-button auth__form-button_type_login' type="submit">Войти</button>

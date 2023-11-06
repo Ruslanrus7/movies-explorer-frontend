@@ -10,7 +10,7 @@ export default function SearchForm () {
         <label className='checkbox'>
             <input className='checkbox__input' type='checkbox' name="checkbox"/>
             <span className='checkbox__icon'></span>
-            <p className='checkbox__text'>Короткометражки</p>
+            <span className='checkbox__text'>Короткометражки</span>
         </label>
       </form>
     </section>

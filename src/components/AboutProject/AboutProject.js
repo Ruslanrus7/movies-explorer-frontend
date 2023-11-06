@@ -4,7 +4,7 @@ import AboutTitle from '../AboutTitle/AboutTitle';
 
 export default function AboutProject () {
   return (
-    <section className='about-project page___about-project' id="project">
+    <section className='about-project page__about-project' id="project">
       <AboutTitle title="О проекте" />
       <div className='about-diplom'>
         <div className='about-diplom__box'>
