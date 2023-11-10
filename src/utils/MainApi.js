@@ -81,7 +81,7 @@ class MainApi {
 
 
 const api = new MainApi({
-  baseUrl: 'http://localhost:3000',
+  baseUrl: 'https://api.movieworld.nomoredomainsrocks.ru',
 });
 
 export default api;
