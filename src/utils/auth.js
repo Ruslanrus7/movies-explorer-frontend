@@ -1,5 +1,5 @@
-export const BASE_URL = 'http://localhost:3000';
-// export const BASE_URL = 'https://api.movieworld.nomoredomainsrocks.ru';
+// export const BASE_URL = 'http://localhost:3000';
+export const BASE_URL = 'https://api.movieworld.nomoredomainsrocks.ru';
 
 const getResponseData = (res) => {
   if(res.ok) {
