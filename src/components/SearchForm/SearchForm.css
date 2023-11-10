@@ -37,6 +37,19 @@
   box-shadow: 0px 3px 14px 0px rgb(38, 66, 66);
 }
 
+.search__error {
+  color: #FF004C;
+  display: block;
+  height: 12px;
+  margin-top: 10px;
+  font-size: 11px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  padding-left: 22px;
+}
+
 .search-form__button {
   padding: 17px;
   border-radius: 50%;
@@ -59,7 +72,7 @@
   display: flex;
   gap: 12px;
   position: relative;
-  margin: 41px 0 0 0;
+  margin: 20px 0 0 0;
   justify-content: center;
 }
 
@@ -84,7 +97,7 @@
   opacity: 0.8;
 }
 
-.checkbox__input:checked +  .checkbox__icon {
+.checkbox__input_active +  .checkbox__icon {
   background-image: url(../../images/smalltumb.svg);
 }
 

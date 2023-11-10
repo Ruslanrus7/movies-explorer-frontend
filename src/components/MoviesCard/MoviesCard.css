@@ -1,5 +1,5 @@
 .movies__card {
-  max-width: 364px;
+  width: 364px;
   justify-self: center;
   cursor: pointer;
 }
@@ -7,13 +7,14 @@
 .movies__card-image {
   width: 100%;
   height: 203px;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
   display: block;
   border-radius: 6px  6px 0 0;
 }
 
 .movies__card-info {
+  width: 100%;
   height: 78px;
   padding: 16px;
   background-color: #222222;
@@ -86,7 +87,14 @@
   display: block;
 }
 
+@media(max-width: 1279px) {
+  .movies__card {
+    width: 339px;
+  }
+}
+
 @media (max-width: 1100px) {
+
   .movies__card-image {
     height: 190px;
   }
@@ -95,9 +103,18 @@
     height: 72px;
     padding: 14px;
   }
+
+  .movies__card-delet {
+    display: block;
+  }
 }
 
 @media (max-width: 700px) {
+
+  .movies__card {
+    width: 300px;
+  }
+
   .movies__card-image {
     height: 168px;
   }
@@ -120,7 +137,4 @@
     margin: 2px 5px 0 0;
   }
 
-  .movies__card-delet {
-    display: block;
-  }
 }

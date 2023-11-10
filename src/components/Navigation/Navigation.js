@@ -2,10 +2,11 @@ import React from 'react';
 import './Navigation.css';
 import { Link, NavLink } from 'react-router-dom';
 import BurgerBackground from '../BurgerBackground/BurgerBackground';
+import CurrentUserContext from '../../contexts/CurrentUserContext';
 
 export default function Navigation (props) {
 
-  let location = window.location.pathname;
+  const {location} = React.useContext(CurrentUserContext)
 
   return (
     <>

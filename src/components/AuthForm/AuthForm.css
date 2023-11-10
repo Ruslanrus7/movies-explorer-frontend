@@ -76,8 +76,22 @@
   overflow: hidden;
 }
 
+.auth__sever-error {
+  margin-top: 38px;
+  height: 14px;
+  font-size: 11px;
+  color: #EE3465;
+  box-sizing: border-box;
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
 .auth__form-button {
-  margin: 72px 0 0 0;
+  margin: 20px 0 0 0;
   width: 100%;
   height: 45px;
   background-color: #4285F4;
@@ -97,6 +111,11 @@
 
 .auth__form-button_type_login {
   margin: 159px 0 0 0;
+}
+
+.auth__form-button_disabled {
+  background-color: #F8F8F8;
+  color: #C2C2C2;
 }
 
 .auth__link-text {
@@ -132,8 +151,12 @@
     margin: 80px 0 30px;
   }
 
+  .auth__sever-error {
+    margin-top: 125px;
+  }
+
   .auth__form-button {
-    margin: 159px 0 0 0;
+    margin: 20px 0 0 0;
     font-size: 12px;
   }
 
