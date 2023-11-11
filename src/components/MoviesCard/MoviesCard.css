@@ -91,6 +91,10 @@
   .movies__card {
     width: 339px;
   }
+
+  .movies__card-delet {
+    display: block;
+  }
 }
 
 @media (max-width: 1100px) {

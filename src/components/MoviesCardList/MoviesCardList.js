@@ -42,9 +42,9 @@ export default function MoviesCardList ({movies, serverError, onDeleteMovie, onS
         }
       };
 
-      window.addEventListener('resize', displayCardsResize)
+      window.addEventListener('resize', displayCardsResize);
 
-      return () => window.removeEventListener('resize', displayCardsResize);
+      return () => {window.removeEventListener('resize', displayCardsResize)};
     };
   }, [location, movies]);
 

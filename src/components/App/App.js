@@ -1,5 +1,5 @@
 import React from 'react';
-import {Routes, Route, useNavigate} from 'react-router-dom';
+import {Routes, Route, useNavigate, Navigate} from 'react-router-dom';
 import CurrentUserContext from '../../contexts/CurrentUserContext';
 import './App.css';
 import Main from '../Main/Main';
@@ -101,8 +101,8 @@ function App() {
           <Route path='/movies' element={<ProtectedRoute element={Movies} savedMovies={savedMovies} onSaveMovie={handleSaveMovie} loggedIn={loggedIn} />} />
           <Route path='/saved-movies' element={<ProtectedRoute element={SavedMovies} savedMovies={savedMovies} onDeleteMovie={handleDeletMovie} loggedIn={loggedIn}/>} />
           <Route path='/profile' element={<ProtectedRoute element={Profile} onEditUserInfo={editUserInfo} setLoggedIn={setLoggedIn} loggedIn={loggedIn} />} />
-          <Route path='/signup' element={<Register setLoggedIn={setLoggedIn}/>} />
-          <Route path='/signin' element={<Login setLoggedIn={setLoggedIn} />} />
+          <Route path='/signup' element={<ProtectedRoute element={Register} setLoggedIn={setLoggedIn} loggedIn={!loggedIn}/>}/>
+          <Route path='/signin' element={<ProtectedRoute element={Login}  setLoggedIn={setLoggedIn} loggedIn={!loggedIn}/>} />
           <Route path='*' element={<NotFound />} />
         </Routes>
       </CurrentUserContext.Provider>
