@@ -10,13 +10,14 @@ export default function MoviesCardList ({movies, serverError, onDeleteMovie, onS
   let {location} = React.useContext(CurrentUserContext);
   const rowMovies = movies.slice(0, isCounter);
 
+
   function displayCards() {
     const counter = {cards: 12, result: 3}
     if (window.innerWidth < 1280) {
       counter.cards = 8;
       counter.result = 2;
     }
-    if (window.innerWidth < 771) {
+    if (window.innerWidth < 761) {
       counter.cards = 5;
       counter.result = 2;
     };
@@ -41,9 +42,9 @@ export default function MoviesCardList ({movies, serverError, onDeleteMovie, onS
         }
       };
 
-      window.addEventListener('risize', displayCardsResize);
+      window.addEventListener('resize', displayCardsResize)
 
-      return () => {window.removeEventListener('risize', displayCardsResize)};
+      return () => window.removeEventListener('resize', displayCardsResize);
     };
   }, [location, movies]);
 
@@ -51,9 +52,7 @@ export default function MoviesCardList ({movies, serverError, onDeleteMovie, onS
     setIsCounter(isCounter + displayCards().result)
   };
 
-
   return (
-
     <section className='movies'>
         <ul className='movies__container'>
           { loading ? <Preloader /> :
