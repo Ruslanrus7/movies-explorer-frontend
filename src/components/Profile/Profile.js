@@ -20,7 +20,8 @@ export default function Profile ({onEditUserInfo, setLoggedIn}) {
 
   React.useEffect(()=> {
     setValues({name: currentUser.name, email: currentUser.email});
-  }, [])
+  }, [currentUser])
+
 
   function signOut () {
     localStorage.removeItem('jwt');
