@@ -28,6 +28,7 @@ export default function Movies ({onSaveMovie, savedMovies}) {
   }, []);
 
   function searchMovies (search) {
+    console.log(search)
     if (isMovies.length === 0) {
       SetLoading(true)
       MoviesApi.getInitialCards()
@@ -67,16 +68,15 @@ export default function Movies ({onSaveMovie, savedMovies}) {
     }
   }, [filterMovies]);
 
-  function changeCheckShorts () {
+  function changeCheckShorts (search) {
     if (isCheck) {
       setIsCheck(false);
-      filterMovies(isSearchMovie, false, isMovies);
+      filterMovies(search, false, isMovies);
     } else {
       setIsCheck(true);
-      filterMovies(isSearchMovie, true, isMovies);
+      filterMovies(search, true, isMovies);
     }
   };
-
 
   return (
     <>

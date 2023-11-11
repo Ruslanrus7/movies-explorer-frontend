@@ -30,6 +30,10 @@ export default function SearchForm ({isCheck, changeCheckShorts, searchMovies, i
     }
   }
 
+  function handleCheckShorts() {
+    changeCheckShorts(values.search);
+  }
+
   return (
     <section className='search page__search'>
       <form className='search-form' action='#' onSubmit={onSubmit} noValidate>
@@ -37,7 +41,7 @@ export default function SearchForm ({isCheck, changeCheckShorts, searchMovies, i
         <span className="search__error">{errors.search}</span>
         <button className='search-form__button' type='submit' />
         <label className='checkbox'>
-            <input className={isCheck ? 'checkbox__input checkbox__input_active' : 'checkbox__input'} type='checkbox' name="checkbox" onChange={changeCheckShorts}/>
+            <input className={isCheck ? 'checkbox__input checkbox__input_active' : 'checkbox__input'} type='checkbox' name="checkbox" onChange={handleCheckShorts}/>
             <span className='checkbox__icon'></span>
             <span className='checkbox__text'>Короткометражки</span>
         </label>

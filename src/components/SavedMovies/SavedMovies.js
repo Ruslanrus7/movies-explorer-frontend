@@ -27,13 +27,13 @@ export default function SavedMovies ({savedMovies, onDeleteMovie}) {
     filterMovies(search, isCheck, savedMovies);
   };
 
-  function changeCheckShorts () {
+  function changeCheckShorts (search) {
     if (isCheck) {
       setIsCheck(false);
-      filterMovies(isSearchMovie, false, savedMovies);
+      filterMovies(search, false, savedMovies);
     } else {
       setIsCheck(true);
-      filterMovies(isSearchMovie, true, savedMovies);
+      filterMovies(search, true, savedMovies);
     }
   };
 
