@@ -59,6 +59,7 @@ export default function Profile ({onEditUserInfo, setLoggedIn}) {
     })
     .finally(() => {
       setLoading(false)
+      SitIsCheck(false)
     })
   }
 
@@ -82,9 +83,9 @@ export default function Profile ({onEditUserInfo, setLoggedIn}) {
               <span className='profile__input-text'>E-mail</span>
               <input className='profile__input' type='email' value={values.email || ''} placeholder='Email' name="email" onChange={handleChange} disabled={!isCheck} required pattern={EmailPattern}/>
             </label>
+            <span className="prifile__error">{errors.name || errors.email || serverError}</span>
             {isCheck ?
               <>
-                <span className="prifile__error">{errors.name || errors.email || serverError}</span>
                 <button className={(isValid && ((currentUser.name !== values.name) || (currentUser.email !== values.email))) ? 'profile__button-submit' : 'profile__button-submit profile__button-submit_disabled'}
                 disabled={!(isValid && ((currentUser.name !== values.name) || (currentUser.email !== values.email)))}
                 onClick={handleSubmit} type="submit">
