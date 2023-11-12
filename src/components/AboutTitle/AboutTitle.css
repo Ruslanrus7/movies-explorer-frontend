@@ -1,0 +1,28 @@
+.about-title {
+  margin: 0;
+  font-size: 22px;
+  line-height: 1.2;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: -0.88px;
+}
+
+.about-title::after {
+  content: '';
+  border-bottom: 1px solid  #DADADA;
+  max-width: 1140px;
+  display: block;
+  padding-top: 23px;
+}
+
+
+@media (max-width: 700px) {
+  .about-title {
+    font-size: 18px;
+    letter-spacing: -0.72px;
+  }
+
+  .about-title::after {
+    padding-top: 28px;
+  }
+}
