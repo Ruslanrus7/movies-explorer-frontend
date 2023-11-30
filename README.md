@@ -1,6 +1,13 @@
-[Ссыллка на макет](https://www.figma.com/file/6FMWkB94wE7KTkcCgUXtnC/Дипломный-проект?type=design&node-id=1-9302&mode=design&t=f4SJmd3PMCDTMe8g-0)
-
-[Ссылка на пул реквест](https://github.com/Ruslanrus7/movies-explorer-frontend/pull/2)
-
-[Ссылку на задеплоенный на сервере проект](https://movieworld.nomoredomainsrocks.ru)
-
+# Прект "Кино-поиск"
+## Описание и функциональность:
+* Это сервис, в котором можно найти фильмы по запросу и сохранить в личном кабинете
+* Подключена база данных, созданы схемы и модели ресурсов API
+* Реализовано логирование, аутентификация и авторизация на сервере
+* Проработаны авторизованные и неавторизованные состояния, сохранение фильмов в профиле
+* Полученные фильмы фильтруются на стороне клиента
+## Стек:
+ React, JS, NodeJS, Express, MongoDB, API, JWT, Postman, Html, CSS, Git, Адаптивная верстка, БЭМ, Figma
+## Backend:
+(https://github.com/Ruslanrus7/movies-explorer-api)
+## Инструкция:
+npm start - для запуска проекта
